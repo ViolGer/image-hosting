@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            color: #E0E0E0;
+            background-color: transparent;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        label:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        button {
+            color: #E0E0E0;
+            background-color: transparent;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Загрузка изображения</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <input type="file" id="file-upload" name="image" accept=".jpeg,.png,.gif,.jpg">
+        <label for="file-upload">Выберите файл</label>
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+
+</html>

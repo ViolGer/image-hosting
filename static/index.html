@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Hosting</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #E0E0E0;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добро пожаловать в Image Hosting!</h1>
+    <a href="/upload">Загрузить изображение</a>
+    <a href="http://localhost:8080/images/" style="margin-top: 10px;">Посмотреть изображения</a>
+</body>
+
+</html>
