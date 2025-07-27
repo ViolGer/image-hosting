@@ -28,13 +28,15 @@ Users can upload, view, and manage images through a simple HTML interface or API
 
 ## 📁 Project Structure
 
-image-hosting/ ├── app.py                 
-# FastAPI application ├── Dockerfile             
-# Backend container ├── compose.yml            
-# Docker Compose setup ├── nginx.conf            
-# Nginx config for serving static + reverse proxy ├── static/          
-# Frontend (HTML/CSS/JS) ├── images/              
-# Stored uploaded images ├── .gitignore └── requirements.txt
+- app.py — FastAPI application
+- Dockerfile — container setup
+- compose.yml — Docker Compose config
+- nginx.conf — Nginx reverse proxy config
+- static/ — frontend (HTML/CSS/JS)
+  - index.html, upload.html, images/
+- images/ — stored uploaded images
+- .gitignore
+- requirements.txt
 
 ---
 
